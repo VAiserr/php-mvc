@@ -9,7 +9,11 @@ namespace Core;
 class View
 {
     /**
+     * Подключает файл представления
      * 
+     * @param string $view название представления
+     * @param array $args массив данных передоваемые представлению (optional)
+     * @param string $template шаблон файла представления (optional)
      */
     public static function render($view, $args = [], $template = 'main')
     {
